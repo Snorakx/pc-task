@@ -1,7 +1,6 @@
 import React from "react";
-import Button from "./Button";
 
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const Container = (props) => {
 

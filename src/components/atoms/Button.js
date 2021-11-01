@@ -1,6 +1,8 @@
 import React from "react";
 
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+import {useDispatch} from "react-redux";
+import { getMovies } from "../../state/movies/action";
 
 const Button = (props) => {
   const CustomButton = styled.button`
@@ -12,10 +14,15 @@ const Button = (props) => {
     color: #f0f0f0;
     padding: 1rem 2rem;
   `;
+  const dispatch = useDispatch();
+
+  const fetchAPI = () =>{
+    dispatch(getMovies());
+  }
 
 
   return (
-      <CustomButton>{props.children}</CustomButton>
+      <CustomButton onClick={fetchAPI}>{props.children}</CustomButton>
   );
 };
 export default Button;
