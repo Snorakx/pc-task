@@ -11,6 +11,7 @@ const CustomButton = styled.button`
   color: #f0f0f0;
   border-radius: 50%;
   line-height: 0;
+  cursor:pointer;
   &:active{
     background-color:#353535
   }

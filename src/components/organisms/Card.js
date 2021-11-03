@@ -4,8 +4,6 @@ import RateComponent from "../atoms/Rate";
 import TextContainerComponent from "../molecules/TextContainer";
 
 const CustomCard = styled.div`
-  border-radius: 1.5rem;
-  margin: 1rem;
   flex-direction: column;
   justify-content: flex-end;
   display: none;
@@ -16,6 +14,7 @@ const CustomCard = styled.div`
   background-position: top;
   margin: 1rem;
   position: relative;
+  cursor:pointer;
   &:last-child {
     display: flex;
     background-image: ${(props) => `url(${props.myUrl})` || "auto"};

@@ -8,10 +8,9 @@ const Description = styled.div`
 `;
 
 const DescriptionComponent = (props) => {
-  const truncate = (str)=>{
-    return str.length>170 ? str.substring(0,170) + "...": str;
-
-  }
+  const truncate = (str) => {
+    return str.length > 170 ? str.substring(0, 170) + "..." : str;
+  };
   return <Description>{truncate(props.children)}</Description>;
 };
 export default DescriptionComponent;

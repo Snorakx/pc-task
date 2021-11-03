@@ -73,7 +73,6 @@ export const rejectMovie = (ID) => (dispatch) => {
   const data = {
     movieID: ID,
   };
-  console.log(data);
   const requestOptions = {
     method: "post",
     headers: {

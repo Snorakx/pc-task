@@ -4,7 +4,6 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   width: 100%;
-  align-items: center;
   justify-content: space-evenly;
   flex-direction: ${(props) => props.flexDirection || "row"};
   flex: ${(props) => props.flex || "auto"};

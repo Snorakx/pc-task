@@ -77,7 +77,7 @@ const WrapperComponent = () => {
 
   return (
     <Wrapper>
-       {moviesList.length != 0 ?(
+       {moviesList.length !== 0 ?(
       <WrapperFlex {...handlers}>
         {moviesList.map((item, index) => (
           <Card
@@ -92,7 +92,7 @@ const WrapperComponent = () => {
       ):
       <NoMoreCardsComponent/>
       }
-      {moviesListSelector.length != 0 ?(
+      {moviesListSelector.length !== 0 ?(
       <ContainerComponent myHeight="20vh" flex="1">
         <Button handleClick={() => rejectMovieHandler()}>
           <SvgIconCross />
