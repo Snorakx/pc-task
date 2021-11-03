@@ -1,5 +1,9 @@
 # Live: https://patrykkoziel-task.surge.sh/
 
+#### Swipe or click X to reject , click on green heart to accept movie recommendation.
+#### Click on poster to see full image
+#### If u have problem with loading movie list, just wait a few seconds, maybe heroku needs to wake up :)
+
 # How to start:
 
 ## 1.Clone repo
