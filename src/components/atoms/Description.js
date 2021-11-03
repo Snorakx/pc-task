@@ -1,18 +1,17 @@
 import React from "react";
-
 import styled from "styled-components";
-import ContainerComponent from "./Container";
+
 const Description = styled.div`
-  background-color: #f8f5f0;
   display: flex;
   align-items: center;
-  padding: 2rem;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (3000 - 300)));
 `;
+
 const DescriptionComponent = (props) => {
-  return (
-    <ContainerComponent>
-      <Description>{props.children}</Description>
-    </ContainerComponent>
-  );
+  const truncate = (str)=>{
+    return str.length>170 ? str.substring(0,170) + "...": str;
+
+  }
+  return <Description>{truncate(props.children)}</Description>;
 };
 export default DescriptionComponent;

@@ -1,21 +1,17 @@
 import React from "react";
-
 import styled from "styled-components";
-import Container from "./Container";
-import Rate from "./Rate";
+
 const Title = styled.div`
-  background-color: #f8f5f0;
   display: flex;
   align-items: center;
-  font-size: 2rem;
-  padding: 2rem;
+  font-size: calc(20px + (36 - 20) * ((100vw - 300px) / (3000 - 300)));
+  padding-bottom: 1rem;
+  text-align: left;
+  font-weight: 700;
 `;
+
 const TitleComponent = (props) => {
-  return (
-    <Container>
-      <Title>{props.children}</Title>
-      <Rate>{props.rate}</Rate>
-    </Container>
-  );
+  return <Title>{props.children}</Title>;
 };
+
 export default TitleComponent;

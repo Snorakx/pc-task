@@ -34,6 +34,18 @@ export default function moviesReducer(state = initialState, action) {
         moviesLoading: false,
         moviesLoaded: false,
       };
+      case ACCEPT_MOVIE:
+      return {
+        ...state,
+        moviesLoading: false,
+        moviesLoaded: false,
+      };
+      case REJECT_MOVIE:
+        return {
+          ...state,
+          moviesLoading: false,
+          moviesLoaded: false,
+        };
     case REMOVE_USED_RECOMENDATIONS:
       const cloneMoviesList = [...state.moviesList];
       cloneMoviesList.pop();

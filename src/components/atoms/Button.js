@@ -1,14 +1,23 @@
-import React, { useState } from "react";
-
+import React from "react";
 import styled from "styled-components";
+
 const CustomButton = styled.button`
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   background-color: #0f0f0f;
   border: none;
   outline: none;
+  padding: 1rem;
   color: #f0f0f0;
-  padding: 1rem 2rem;
+  border-radius: 50%;
+  line-height: 0;
+  &:active{
+    background-color:#353535
+  }
+  svg{
+    width:38px;
+    height:38px;
+  }
 `;
 
 const ButtonComponent = (props) => {

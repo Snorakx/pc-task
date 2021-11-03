@@ -1,12 +1,15 @@
 import "./style.scss";
 import React from "react";
-import WrapperComponent from "./components/Wrapper";
+import WrapperComponent from "./components/templates/Wrapper";
+import PageComponent from "./components/templates/page";
 
 function App() {
-  require('dotenv').config();
+  require("dotenv").config();
 
   return (
-    <WrapperComponent/>
+    <PageComponent>
+      <WrapperComponent />
+    </PageComponent>
   );
 }
 
