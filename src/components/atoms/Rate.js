@@ -1,7 +1,7 @@
 import React from "react";
 
 import styled from "styled-components";
-const Container = styled.div`
+const Rate = styled.div`
   background-color: #f8f5f0;
   border: none;
   outline: none;
@@ -10,7 +10,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-evenly;
 `;
-const ContainerComponent = (props) => {
-  return <Container>{props.children}</Container>;
+const RateComponent = (props) => {
+  return <Rate>{props.children}</Rate>;
 };
-export default ContainerComponent;
+export default RateComponent;

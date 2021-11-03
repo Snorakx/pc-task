@@ -1,28 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
 import styled from "styled-components";
-import {useDispatch} from "react-redux";
-import { getMovies } from "../../state/movies/action";
+const CustomButton = styled.button`
+  font-size: 2rem;
+  text-align: center;
+  background-color: #0f0f0f;
+  border: none;
+  outline: none;
+  color: #f0f0f0;
+  padding: 1rem 2rem;
+`;
 
-const Button = (props) => {
-  const CustomButton = styled.button`
-    font-size: 2rem;
-    text-align: center;
-    background-color: #0f0f0f;
-    border: none;
-    outline: none;
-    color: #f0f0f0;
-    padding: 1rem 2rem;
-  `;
-  const dispatch = useDispatch();
-
-  const fetchAPI = () =>{
-    dispatch(getMovies());
-  }
-
-
+const ButtonComponent = (props) => {
   return (
-      <CustomButton onClick={fetchAPI}>{props.children}</CustomButton>
+    <CustomButton onClick={props.handleClick}>{props.children}</CustomButton>
   );
 };
-export default Button;
+export default ButtonComponent;

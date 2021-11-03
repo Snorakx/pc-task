@@ -27,6 +27,34 @@
       "title": "Forest Gump",
       "summary": "Lorem ipsum....",
       "rating": 8.9
+    },
+    {
+      "id": "23042abc",
+      "imageURL": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+      "title": "The Shawshank Redemption (1994)",
+      "summary": "Lorem ipsum....",
+      "rating": 9.2
+    },
+    {
+      "id": "59ddadbc",
+      "imageURL": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+      "title": "God father",
+      "summary": "Lorem ipsum....",
+      "rating": 8.9
+    },
+    {
+      "id": "23042abc",
+      "imageURL": "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+      "title": "The Lord of the Rings: The Return of the King (2003)",
+      "summary": "Lorem ipsum....",
+      "rating": 9.2
+    },
+    {
+      "id": "59ddadbc",
+      "imageURL": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+      "title": "Pulp Fiction (1994)",
+      "summary": "Lorem ipsum....",
+      "rating": 8.9
     }
   ]
 }

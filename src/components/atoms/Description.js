@@ -1,19 +1,18 @@
 import React from "react";
 
 import styled from "styled-components";
-
-const Description = (props) => {
-
-    const Description = styled.div`
-    background-color: #f8f5f0;
-    display:flex;
-    align-items:center;
-    padding:2rem;
-  `;
+import ContainerComponent from "./Container";
+const Description = styled.div`
+  background-color: #f8f5f0;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+`;
+const DescriptionComponent = (props) => {
   return (
-    <Description>
-      {props.children}
-    </Description>
+    <ContainerComponent>
+      <Description>{props.children}</Description>
+    </ContainerComponent>
   );
 };
-export default Description;
+export default DescriptionComponent;
