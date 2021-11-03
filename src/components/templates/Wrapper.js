@@ -14,6 +14,7 @@ import {
   rejectMovie,
 } from "../../state/movies/action";
 import { useSwipeable } from "react-swipeable";
+import NoMoreCardsComponent from "../organisms/NoMoreCards";
 
 const Wrapper = styled.section`
   width: 100vw;
@@ -34,29 +35,18 @@ const WrapperComponent = () => {
   const [page, setPage] = useState(2);
 
   const dispatch = useDispatch();
-
-  let moviesListSelector = useSelector((state) => state.movies.moviesList);
-  let moviesList = [];
-
-  if (moviesListSelector.length > 0) {
-    moviesList = moviesListSelector;
-  } else {
-    moviesList = [
-      {
-        title: "Loading...",
-        rating: "Loading...",
-        summary: "Loading...",
-        source: "Loading...",
-      },
-    ];
-  }
-
   const fetchAPI = (page) => {
     dispatch(getMovies(page));
   };
   useEffect(() => {
     fetchAPI(1);
   }, []);
+
+  let moviesListSelector = useSelector((state) => state.movies.moviesList);
+  let moviesList = [];
+  moviesList = moviesListSelector;
+
+
 
   const getNextMovie = () => {
     if (moviesList.length < 3) {
@@ -87,6 +77,7 @@ const WrapperComponent = () => {
 
   return (
     <Wrapper>
+       {moviesList.length != 0 ?(
       <WrapperFlex {...handlers}>
         {moviesList.map((item, index) => (
           <Card
@@ -98,6 +89,10 @@ const WrapperComponent = () => {
           />
         ))}
       </WrapperFlex>
+      ):
+      <NoMoreCardsComponent/>
+      }
+      {moviesListSelector.length != 0 ?(
       <ContainerComponent myHeight="20vh" flex="1">
         <Button handleClick={() => rejectMovieHandler()}>
           <SvgIconCross />
@@ -106,6 +101,7 @@ const WrapperComponent = () => {
           <SvgIconHeart />
         </Button>
       </ContainerComponent>
+      ):<></>}
     </Wrapper>
   );
 };

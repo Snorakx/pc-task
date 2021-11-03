@@ -6,7 +6,6 @@ import TextContainerComponent from "../molecules/TextContainer";
 const CustomCard = styled.div`
   border-radius: 1.5rem;
   margin: 1rem;
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   display: none;
